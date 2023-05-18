@@ -1,0 +1,76 @@
+body {
+    background-image: url(https://casolli.com/BLOG/wp-content/uploads/2014/04/metal-texture-black-abstract-hd-1085891.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    width: 70%;
+    background-color: rgba(221, 221, 221, 0.8);
+    text-align: center;
+    margin: auto;
+    border: 5px solid darkred;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px black;
+} 
+
+h1{
+    display: none;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Metal Mania', cursive;
+    font-size: 60pt;
+    background: -webkit-linear-gradient(#c00000, #000000);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 25px;
+}
+
+button {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: large;
+    font-family: 'Rock Salt', cursive;
+    border-radius: 5px;
+    border: darkred solid 5px;
+    box-shadow: 2px 2px 4px black;
+    padding: 10px;
+}
+
+button:hover{
+    color: #c00000;
+}
+
+#resultado {
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: large;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: auto;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+footer {
+    width: fit-content;
+    padding: 10px;
+    background-color: rgba(221, 221, 221, 0.8);
+    margin: auto;
+    border: 5px solid darkred;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px black;
+    margin-top: 10px;
+} 
+
+ul{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: large;
+    font-family: 'RocknRoll One', sans-serif;
+    padding: 10px;
+}
