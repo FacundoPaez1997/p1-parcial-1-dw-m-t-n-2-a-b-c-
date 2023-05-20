@@ -23,9 +23,11 @@ h2 {
     text-align: center;
     font-family: 'Metal Mania', cursive;
     font-size: 60pt;
-    background: -webkit-linear-gradient(#c00000, #000000);
-    background-clip: text;
+    background: linear-gradient(#c00000, #000000);
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
     margin: 25px;
 }
 
