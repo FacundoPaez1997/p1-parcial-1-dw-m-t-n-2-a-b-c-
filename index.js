@@ -15,8 +15,22 @@ function Cargar() {
     var autor = prompt("Ingrese el autor o banda del disco:");
     var codigo = parseInt(prompt("Ingrese el código numérico único del disco (entre 1 y 999):"));
 
+    
+    
+/////////////////////// Validación del nombre y autor ///////////////////////
+    
+    
+    
+ while (nombre.trim() === '') {
+    nombre = prompt("Nombre inválido. Ingrese el nombre del disco nuevamente:");
+}
+    
+ while (autor.trim() === '') {
+    autor = prompt("Autor o banda inválido. Ingrese el autor o banda del disco nuevamente:");
+}
 
-
+    
+    
 /////////////////////// Validación del código único ///////////////////////
 
 
