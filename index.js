@@ -6,35 +6,23 @@ var discos = [];
 
 
 
-/////////////////////// Función para cargar un nuevo disco ///////////////////////
+/////////////////////// Función para cargar un nuevo disco + Validaciones ///////////////////////
 
 
 
 function Cargar() {
     var nombre = prompt("Ingrese el nombre del disco:");
+    while (nombre.trim() === '') {
+        nombre = prompt("Nombre inválido. Ingrese el nombre del disco nuevamente:");
+    }
+    
+    
     var autor = prompt("Ingrese el autor o banda del disco:");
+    while (autor.trim() === '') {
+        autor = prompt("Autor o banda inválido. Ingrese el autor o banda del disco nuevamente:");
+    }
+
     var codigo = parseInt(prompt("Ingrese el código numérico único del disco (entre 1 y 999):"));
-
-    
-    
-/////////////////////// Validación del nombre y autor ///////////////////////
-    
-    
-    
- while (nombre.trim() === '') {
-    nombre = prompt("Nombre inválido. Ingrese el nombre del disco nuevamente:");
-}
-    
- while (autor.trim() === '') {
-    autor = prompt("Autor o banda inválido. Ingrese el autor o banda del disco nuevamente:");
-}
-
-    
-    
-/////////////////////// Validación del código único ///////////////////////
-
-
-
     while (isNaN(codigo) || codigo < 1 || codigo > 999 || discoExistente(codigo)) {
         codigo = parseInt(prompt("Código inválido o ya existente. Ingrese otro código numérico único del disco (entre 1 y 999):"));
     }
@@ -122,5 +110,4 @@ function Mostrar() {
 
     document.getElementById("resultado").innerHTML = resultado;
 }
-
 
